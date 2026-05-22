@@ -18,7 +18,7 @@ function Expenses() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/expenses"
+        "https://splitsmart-backend-jurk.onrender.com/api/expenses"
       );
 
       setExpenses(res.data);
@@ -36,7 +36,7 @@ function Expenses() {
     try {
 
       const res = await axios.delete(
-        `http://localhost:5000/api/expenses/${id}`
+        `https://splitsmart-backend-jurk.onrender.com/api/expenses/${id}`
       );
 
       toast.success(res.data.message);
