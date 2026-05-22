@@ -67,7 +67,7 @@ function Expenses() {
     try {
 
       const res = await axios.put(
-        `http://localhost:5000/api/expenses/${id}`,
+        `https://splitsmart-backend-jurk.onrender.com/api/expenses/${id}`,
         editData
       );
 

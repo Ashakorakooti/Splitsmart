@@ -22,7 +22,7 @@ function AddExpense() {
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/expenses/add",
+        "https://splitsmart-backend-jurk.onrender.com/api/expenses/add",
         formData
       );
 
